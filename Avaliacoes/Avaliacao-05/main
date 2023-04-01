@@ -1,0 +1,18 @@
+.header on 
+.mode column
+  
+create table alunos_ifce (
+  nome text,
+  matricula integer,
+  telefone integer
+);
+insert into alunos_ifce values
+  ('Mell Sudário', 202120110000, 222222222),
+  ('Marina Oliveira', 202120112222, 333333333),
+  ('Gabriel Marques', 202120116666, 444444444),
+  ('Clara Rodrigues', 202120118888, 999999999),
+  ('Maria Julia Amora', 202120115555, 777777777);
+
+update alunos_ifce set matricula = 111111111111 where nome = 'Clara Rodrigues';
+
+select * from alunos_ifce;
